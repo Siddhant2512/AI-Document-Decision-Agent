@@ -3,11 +3,11 @@
 A 24-hour technical evaluation for the AI-Pass Orchestration Platform. This application allows users to upload documents, define a policy, and use an AI agent to determine if the document complies, outputting a structured, explainable decision.
 
 ## Live Demo
-[Insert your live Streamlit link here after deployment]
+https://aipass-evaluator.streamlit.app/
 
 ## Architecture & Tech Stack
 * **Frontend/Backend:** Single-page app built with [Streamlit](https://streamlit.io/) so non-technical users can interact with the agent easily.
-* **LLM Engine:** Gemini via `google-generativeai`. The app dynamically picks an allowed text model for the provided API key (preferring `gemini-1.5-flash` when available).
+* **LLM Engine:** Gemini via `google-generativeai`. The app dynamically picks an allowed text model for the provided API key.
 * **Data Handling:** `PyPDF2` for document text extraction and direct JSON parsing/validation of the model output.
 
 ## How the Reasoning Works
