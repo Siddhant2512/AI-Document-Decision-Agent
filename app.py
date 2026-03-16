@@ -49,7 +49,7 @@ def evaluate_document(policy, document):
     model = genai.GenerativeModel(target_model) 
     
     prompt = f"""
-    You are an expert compliance AI agent who proces the document text abd make strucutured decisions. Evaluate the DOCUMENT against the POLICY.
+    You are an expert compliance AI agent who proces the document text and make strucutured decisions. Evaluate the DOCUMENT against the POLICY.
     
     POLICY:
     {policy}
